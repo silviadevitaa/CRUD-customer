@@ -24,9 +24,19 @@
             <span>Custommer</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('admin/customer/new') ?>">New Product</a>
-            <a class="dropdown-item" href="<?php echo site_url('admin/custommer') ?>">List Product</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/customer/new') ?>">New Customer</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/custommer') ?>">List Customer</a>
         </div>
+        <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'supplier' ? 'active': '' ?>">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-fw fa-boxes"></i>
+                <span>Supplier</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="<?php echo site_url('admin/supplier/new') ?>">New Supplier</a>
+                <a class="dropdown-item" href="<?php echo site_url('admin/supplier') ?>">List Supplier</a>
+            </div>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">
